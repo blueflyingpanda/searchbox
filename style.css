@@ -1,0 +1,127 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: cornflowerblue;
+}
+
+.magnifier{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.input{
+	width: 120px;
+	height: 120px;
+	background: none;
+	border-radius: 50%;
+	border: 10px solid white;
+	box-sizing: border-box;
+	outline: none;
+	transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out, padding 0.2s;
+	transition-delay: 0.4s;
+	color: white;
+	font-size: 40px;
+}
+
+.inclicked{
+	width: 720px;
+	border-radius: 0;
+	padding: 0 30px;
+	padding-right: 80px;
+}
+
+.btn{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	top: 0;
+	right: 0;
+	box-sizing: border-box;
+	background: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.btn::before{
+	content: "";
+	width: 10px;
+	height: 50px;
+	background: white;
+	position: absolute;
+	transform: rotate(-45deg);
+	bottom: -30px;
+	right: -10px;
+	transition: 0.3s;
+}
+
+.close::before, .close::after{
+	content: "";
+	width: 10px;
+	height: 70px;
+	background: white;
+	position: absolute;
+	bottom: 24px;
+	right: 56px;
+}
+
+.close::before{
+	transform: rotate(-45deg);
+}
+
+.close::after{
+	transform: rotate(45deg);
+}
+
+.container{
+	position: absolute;
+	left: 40%;
+	top: 20%;
+	padding-bottom: 3%;
+}
+
+.header{
+	background-color: rgb(31, 71, 144);
+	overflow: hidden;
+	padding: 40px;
+	text-align: center;
+}
+
+.header h1{
+	text-transform: uppercase;
+	color: cornsilk;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.hobby{
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+}
+
+.pic
+{
+	width: 80px;
+	height: 80px;
+	background-color: rgba(19, 68, 160, 0.712);
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	line-height: 80px;
+	border-radius: 100%;
+	margin-right: 20px;
+}
+
+.name{
+	font-size: 36px;
+	font-weight: 600;
+	color: rgb(28, 56, 80);
+}
+
+::placeholder{
+	color: rgba(255, 255, 255, 0.746);
+	font-size: 36px;
+}
